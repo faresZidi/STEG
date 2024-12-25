@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Espace Client</title>
+    <link rel="stylesheet" href="../../css/espace-client.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="icon" href="../../images/logo.png" type="image/png">
+    <script src="../../js/include.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <section class="welcome-section">
+            <h1>Bienvenue à l'Espace Client de la STEG</h1>
+            <p>Connectez-vous pour accéder à votre espace personnalisé et gérer vos services.</p>
+        </section>
+
+        <section class="login-form-section">
+            <h2>Connexion</h2>
+            <form id="login-form" onsubmit="return validateLogin(this);">
+                <div class="form-group">
+                    <label for="username">Utilisateur :</label>
+                    <input type="text" id="username" name="utilisateur" placeholder="Entrez votre identifiant" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="pwd" placeholder="Entrez votre mot de passe" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">Se connecter</button>
+                    <a href="./forgot-password.html" class="forgot-password-link">Mot de passe oublié ?</a>
+                </div>
+                <div class="form-actions">
+                    <a href="./inscription.html" class="btn" style="margin-top: 10%; background-color: #003d80; text-decoration: none;">S'inscrire</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS for Validation -->
+    <script>
+        function validateLogin(form) {
+            if (!form.utilisateur.value.trim()) {
+                alert("Le champ Utilisateur est vide.");
+                form.utilisateur.focus();
+                return false;
+            }
+            if (!form.pwd.value.trim()) {
+                alert("Le champ Mot de passe est vide.");
+                form.pwd.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

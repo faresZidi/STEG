@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: About Us :: Missions</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/cnsd.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+</style>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> History </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activities </a>
+                <a href="./stegenchiffres.html"> STEG in Numbers </a>
+                <a href="./identitevisiuelle.html"> Visual Identity </a>
+                <a href="./organigramme.html"> Organization Chart </a>
+                <a href="./perspectives.html"> Development Perspectives </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <section>
+                    <p>The Tunisian Electricity and Gas Company (<strong>STEG</strong>), established under legal statutes, has the following core missions:</p>
+                    <ul>
+                        <li>Electrification of the country</li>
+                        <li>Development of the Natural Gas network</li>
+                        <li>Construction of electricity and gas infrastructure</li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h2>Our Expertise</h2>
+                    <p>STEG is responsible for producing electricity and Liquefied Petroleum Gas (LPG) as well as for transporting and distributing electricity and natural gas.</p>
+                </section>
+        
+                <section>
+                    <h2>Our Vision</h2>
+                    <p>STEG is committed to a performance-driven strategy. It aims to provide its clients with services of a quality comparable to those offered by the best electricity and gas companies in the Mediterranean region.</p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

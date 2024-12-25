@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Qui sommes-nous ? :: Publications</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> Historique </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activités </a>
+                <a href="./stegenchiffres.html"> Steg en chiffres </a>
+                <a href="./identitevisiuelle.html"> Identité visuelle </a>
+                <a href="./organigramme.html"> Organigramme </a>
+                <a href="./perspectives.html"> Perspectives de développement </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <h2>Publications</h2>
+                <p>Bienvenue sur la page des publications de la STEG. Retrouvez ici nos rapports annuels et états financiers.</p>
+                
+                <section>
+                    <h3>Rapports Annuels</h3>
+                    <ul>
+                        <li><a href="#">Rapport 2023</a></li>
+                        <li><a href="#">Rapport 2022</a></li>
+                        <li><a href="#">Rapport 2021</a></li>
+                        <li><a href="#">Rapport 2020</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>États Financiers</h3>
+                    <ul>
+                        <li><a href="#">État Financier 2023</a></li>
+                        <li><a href="#">État Financier 2022</a></li>
+                        <li><a href="#">État Financier 2021</a></li>
+                        <li><a href="#">État Financier 2020</a></li>
+                    </ul>
+                </section>    
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

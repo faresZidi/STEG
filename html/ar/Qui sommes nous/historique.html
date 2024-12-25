@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: من نحن؟ :: التاريخ</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> التاريخ </a>
+                <a href="./mission.html"> المهمة </a>
+                <a href="./activites.html"> الأنشطة </a>
+                <a href="./stegenchiffres.html"> STEG بالأرقام </a>
+                <a href="./identitevisiuelle.html"> الهوية البصرية </a>
+                <a href="./organigramme.html"> الهيكل التنظيمي </a>
+                <a href="./perspectives.html"> آفاق التطوير </a>
+                <a href="./publications.html"> المنشورات </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>STEG: الأمس، اليوم، والغد</h1>
+            <article>
+                <p>
+                    عشية الاستقلال، كانت أنشطة الكهرباء تُدار من قبل سبع شركات امتياز مسؤولة عن تغطية المناطق الرئيسية 
+                    في البلاد، مع إجمالي قدرة مثبتة تبلغ حوالي <strong>100 ميغاواط</strong> وإنتاج يقارب <strong>240 غيغاواط ساعة</strong>.
+                </p>
+                <p>
+                    في عام 1962، لتوحيد قطاع الطاقة الكهربائية والغاز، أنشأت الدولة التونسية 
+                    <strong>الشركة التونسية للكهرباء والغاز (STEG)</strong>، ومنحتها مهمة إنتاج ونقل وتوزيع الكهرباء والغاز.
+                </p>
+                <!-- <div id="Lines-effectif"></div> -->
+                <p>
+                    بعد 60 عامًا، تطورت أنشطة الكهرباء بمؤشرات مذهلة:
+                </p>
+                <ul>
+                    <li>نسبة الكهرباء العامة ارتفعت من <strong>21%</strong> إلى <strong>99.8%</strong>.</li>
+                    <li>نسبة الكهرباء الريفية وصلت إلى <strong>99.5%</strong>.</li>
+                    <li>القدرة المثبتة ارتفعت إلى <strong>6.014 ميغاواط</strong>.</li>
+                    <li>الإنتاج الوطني بلغ <strong>19.520 غيغاواط ساعة</strong>.</li>
+                    <li>عدد عملاء الكهرباء وصل إلى <strong>4.419.053</strong>.</li>
+                </ul>
+                <p>
+                    بالنسبة للغاز، بلغ الاستهلاك <strong>5.436 كيلوطن مكافئ نفط</strong>، وارتفع عدد العملاء من <strong>25,000</strong> إلى 
+                    <strong>1.021.051</strong> (مقابل 989.600 في عام 2021).
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Chart Script -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            const data = google.visualization.arrayToDataTable([
+                ['السنة', 'عدد العاملين (بالألف)'],
+                ['1962', 2437],
+                ['1987', 7959],
+                ['1997', 9922],
+                ['2009', 9840],
+                ['2010', 9260],
+                ['2011', 10349],
+                ['2013', 12753],
+                ['2014', 12749],
+                ['2015', 12288],
+                ['2016', 12524],
+                ['2017', 12388],
+                ['2018', 12031],
+                ['2019', 13063],
+                ['2020', 13501],
+                ['2021', 13854],
+                ['2022', 13473]
+            ]);
+
+            const options = {
+                title: 'عدد العاملين في النشاط (بالألف)',
+                curveType: 'function',
+                legend: { position: 'bottom' },
+            };
+
+            const chart = new google.visualization.LineChart(document.getElementById('Lines-effectif'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script>
+        // Toggle menu logic
+        document.getElementById('toggle-menu').addEventListener('click', function () {
+            const elements = document.querySelector('.elements');
+            const mainContent = document.querySelector('.main-content');
+
+            if (elements.classList.contains('hidden')) {
+                elements.classList.remove('hidden');
+                elements.classList.add('displayed')
+                mainContent.classList.remove('full-width');
+            } else {
+                elements.classList.add('hidden');
+                elements.classList.remove('displayed')
+                mainContent.classList.add('full-width');
+            }
+        });
+    </script>
+</body>
+</html>

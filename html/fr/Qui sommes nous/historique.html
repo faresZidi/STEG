@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Qui sommes-nous ? :: Historique</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> Historique </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activités </a>
+                <a href="./stegenchiffres.html"> Steg en chiffres </a>
+                <a href="./identitevisiuelle.html"> Identité visuelle </a>
+                <a href="./organigramme.html"> Organigramme </a>
+                <a href="./perspectives.html"> Perspectives de développement </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>La STEG : Hier, Aujourd'hui & Demain</h1>
+            <article>
+                <p>
+                    A la veille de l'indépendance, l'activité électrique était gérée par sept sociétés concessionnaires
+                    chargées de l'alimentation des principales régions du pays, avec une puissance totale installée de près de
+                    <strong>100 MW</strong> et une production d'environ <strong>240 GWh</strong>.
+                </p>
+                <p>
+                    En 1962, pour harmoniser le secteur de l'énergie électrique et du gaz, l'État Tunisien a créé la 
+                    <strong>Société Tunisienne de l'Électricité et du Gaz (STEG)</strong>, lui confiant la production, 
+                    le transport et la distribution de l'électricité et du gaz.
+                </p>
+                <div id="Lines-effectif"></div>
+                <p>
+                    Après 60 ans, l'activité électricité a évolué avec des indicateurs impressionnants :
+                </p>
+                <ul>
+                    <li>Le taux d'électrification global est passé de <strong>21%</strong> à <strong>99.8%</strong>.</li>
+                    <li>Le taux d'électrification rural a atteint <strong>99.5%</strong>.</li>
+                    <li>La puissance installée a grimpé à <strong>6.014 MW</strong>.</li>
+                    <li>La production nationale a atteint <strong>19.520 GWh</strong>.</li>
+                    <li>Le nombre de clients pour l'électricité est de <strong>4.419.053</strong>.</li>
+                </ul>
+                <p>En ce qui concerne le gaz, la consommation a atteint <strong>5.436 Ktep</strong> et le nombre de clients est passé de <strong>25.000</strong> à <strong>1.021.051</strong> (contre 989.600 en 2021).                </p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Chart Script -->
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            const data = google.visualization.arrayToDataTable([
+                ['Année', 'Effectif En Activité(Mille)'],
+                ['1962', 2437],
+                ['1987', 7959],
+                ['1997', 9922],
+                ['2009', 9840],
+                ['2010', 9260],
+                ['2011', 10349],
+                ['2013', 12753],
+                ['2014', 12749],
+                ['2015', 12288],
+                ['2016', 12524],
+                ['2017', 12388],
+                ['2018', 12031],
+                ['2019', 13063],
+                ['2020', 13501],
+                ['2021', 13854],
+                ['2022', 13473]
+            ]);
+
+            const options = {
+                title: 'Effectif En Activité (Mille)',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            const chart = new google.visualization.LineChart(document.getElementById('Lines-effectif'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script>
+        // Toggle menu logic
+        document.getElementById('toggle-menu').addEventListener('click', function () {
+            const elements = document.querySelector('.elements');
+            const mainContent = document.querySelector('.main-content');
+
+            if (elements.classList.contains('hidden')) {
+                elements.classList.remove('hidden');
+                elements.classList.add('displayed')
+                mainContent.classList.remove('full-width');
+            } else {
+                elements.classList.add('hidden');
+                elements.classList.remove('displayed')
+                mainContent.classList.add('full-width');
+            }
+        });
+    </script>
+</body>
+</html>

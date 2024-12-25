@@ -1,0 +1,3 @@
+I want you to remove any css and provide it for me in a downloadable html file 
+
+now that we have the cleaned version without css in this attached file, i need you to reoganize the full html elements with precision, please keep all the elements especially in the tableS just make sure to organize them and make them more appealing and aesthetically pleasing.

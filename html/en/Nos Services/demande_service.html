@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Service Request</title>
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/demande_service.css">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html">Residential Client</a>
+                <a href="./client_industriel.html">Industrial Clients</a>
+                <a href="./demande_service.html">Service Request</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Service Request</h1>
+            <article>
+                <p>
+                    STEG offers you the possibility to submit your service request online by filling out the following form. STEG's response will be sent to your email.
+                </p>
+                <form>
+                    <!-- Subscriber/Non-Subscriber Selection -->
+                    <div class="form-group">
+                        <label>Subscriber</label>
+                        <label><input type="radio" name="subscription" value="subscriber" required> Subscriber</label>
+                        <label><input type="radio" name="subscription" value="non-subscriber"> Non-Subscriber</label>
+                    </div>
+
+                    <!-- Client Type Selection -->
+                    <div class="form-group">
+                        <label>Client Type</label>
+                        <label><input type="radio" name="client-type" value="residential" required> Residential Clients</label>
+                        <label><input type="radio" name="client-type" value="industrial"> Industrial, Promoter, and Tertiary Clients</label>
+                    </div>
+
+                    <!-- Reference Input -->
+                    <div class="form-group">
+                        <label for="reference">Reference <span class="mandatory">(If Subscriber)</span></label>
+                        <input type="text" id="reference" name="reference" placeholder="Enter your reference">
+                    </div>
+
+                    <!-- District Dropdown -->
+                    <div class="form-group">
+                        <label for="district">District <span class="mandatory">*</span></label>
+                        <select id="district" name="district" required>
+                            <option value="">-- Select your district --</option>
+                            <option value="tunis">Tunis City</option>
+                            <option value="sousse">Sousse</option>
+                            <option value="sfax">Sfax</option>
+                            <option value="bizerte">Bizerte</option>
+                            <option value="gabes">Gabes</option>
+                            <!-- Add more districts as needed -->
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

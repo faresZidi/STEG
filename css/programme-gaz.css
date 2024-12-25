@@ -1,0 +1,115 @@
+.overview {
+    background: linear-gradient(to right, #e6f7ff, #f2fbff); /* Subtle gradient for better visual appeal */
+    padding: 20px 30px;
+    border-left: 5px solid #0073e6;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.overview:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.overview h1 {
+    font-size: 2rem;
+    color: #003d80;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.overview p {
+    font-size: 1.1rem;
+    color: #003d80;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Responsive Design for Overview Section */
+@media (max-width: 768px) {
+    .overview {
+        padding: 15px 20px;
+        font-size: 0.9rem;
+    }
+
+    .overview h1 {
+        font-size: 1.5rem;
+    }
+
+    .overview p {
+        font-size: 1rem;
+    }
+}
+
+/* Chart Section */
+.chart-section {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#chart-container {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px; /* Ensures chart area is consistently sized */
+    transition: all 0.3s ease;
+}
+
+#chart-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+    transform: scale(1.02); /* Slight scaling effect */
+}
+
+.chart-placeholder {
+    color: #999;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Update Info */
+.update-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
+
+.update-info time {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+/* Responsive Design for Chart Section */
+@media (max-width: 768px) {
+    .chart-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #chart-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+}
+
+/* Accessibility Enhancements */
+.overview:focus,
+.chart-section h2:focus {
+    outline: 2px solid #0073e6;
+    outline-offset: 4px;
+}
+
+#chart-container:focus {
+    outline: 2px solid #003d80;
+    outline-offset: 4px;
+}

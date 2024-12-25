@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز - فضاء الحرفاء</title>
+    <link rel="stylesheet" href="../../css/espace-client.css">
+    <link rel="stylesheet" href="../../css/base_ar.css">
+    <link rel="icon" href="../../images/logo.png" type="image/png">
+    <script src="../../js/include_ar.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content" style="direction: rtl; text-align: right;">
+        <section class="welcome-section">
+            <h1>مرحباً بكم في فضاء الحرفاء للشركة التونسية للكهرباء والغاز</h1>
+            <p>يرجى تسجيل الدخول للوصول إلى فضائكم الشخصي وإدارة خدماتكم.</p>
+        </section>
+
+        <section class="login-form-section">
+            <h2>تسجيل الدخول</h2>
+            <form id="login-form" onsubmit="return validateLogin(this);">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم :</label>
+                    <input type="text" id="username" name="utilisateur" placeholder="أدخل اسم المستخدم" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">كلمة المرور :</label>
+                    <input type="password" id="password" name="pwd" placeholder="أدخل كلمة المرور" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn">تسجيل الدخول</button>
+                    <a href="./forgot-password.html" class="forgot-password-link">نسيت كلمة المرور ؟</a>
+                </div>
+                <div class="form-actions">
+                    <a href="./inscription.html" class="btn" style="margin-top: 10%; background-color: #003d80; text-decoration: none;">إنشاء حساب</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- JS for Validation -->
+    <script>
+        function validateLogin(form) {
+            if (!form.utilisateur.value.trim()) {
+                alert("حقل اسم المستخدم فارغ.");
+                form.utilisateur.focus();
+                return false;
+            }
+            if (!form.pwd.value.trim()) {
+                alert("حقل كلمة المرور فارغ.");
+                form.pwd.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

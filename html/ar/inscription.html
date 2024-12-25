@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الشركة التونسية للكهرباء والغاز - التسجيل</title>
+    <link rel="icon" href="../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/base_ar.css">
+    <link rel="stylesheet" href="../../css/inscription.css">
+    <script src="../../js/include_ar.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <section class="registration-container">
+            <h1>هل هذه أول زيارة لك؟</h1>
+            <p>يتيح لك هذا النموذج:</p>
+            <ul>
+                <li>مراجعة ودفع فواتيرك عبر الإنترنت.</li>
+                <li>إدارة اشتراكك في الشركة التونسية للكهرباء والغاز.</li>
+                <li>تقديم طلبات للحصول على خدمات من الشركة.</li>
+            </ul>
+            <p><strong>يرجى ملء النموذج بعناية أدناه:</strong></p>
+            <p class="mandatory">(*) الحقول المطلوبة</p>
+
+            <form onsubmit="return validateForm(this)">
+                <label for="fullname">الاسم واللقب <span class="mandatory">*</span></label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="address">العنوان <span class="mandatory">*</span></label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">الهاتف <span class="mandatory">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">البريد الإلكتروني <span class="mandatory">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">اسم المستخدم <span class="mandatory">*</span></label>
+                <input type="text" id="username" name="username" minlength="5" required>
+
+                <label for="password">كلمة المرور <span class="mandatory">*</span></label>
+                <input type="password" id="password" name="password" minlength="5" required>
+
+                <label for="confirm-password">تأكيد كلمة المرور <span class="mandatory">*</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="security-question">سؤال الأمان <span class="mandatory">*</span></label>
+                <select id="security-question" name="security-question" required>
+                    <option value="">--اختر سؤالاً--</option>
+                    <option value="pet">ما اسم أول حيوان أليف امتلكته؟</option>
+                    <option value="city">في أي مدينة ولدت؟</option>
+                </select>
+
+                <label for="security-answer">الإجابة <span class="mandatory">*</span></label>
+                <input type="text" id="security-answer" name="security-answer" required>
+
+                <input type="submit" value="تسجيل">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>

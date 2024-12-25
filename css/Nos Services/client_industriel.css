@@ -1,0 +1,44 @@
+.main-content{width: 75%;margin: 0 auto;}
+
+.main-content h3 {
+    color: #0046ab;
+    margin-top: 20px;
+}
+
+.main-content ul {
+    margin: 10px 0 20px;
+    padding-left: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.main-content table th, 
+.main-content table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.main-content table th {
+    background-color: #0046ab;
+    color: white;
+}
+
+.notice {
+    font-weight: bold;
+    color: #cc0000;
+}
+
+@media screen and (max-width: 768px){
+    .main-content{
+        width: 100%;
+    }
+}

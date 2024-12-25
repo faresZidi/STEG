@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Connection and Subscription</title>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/client_residentiel.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html">Residential Client</a>
+                <a href="./client_industriel.html">Industrial Clients</a>
+                <a href="./demande_service.html">Service Request</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Connection to the Electricity and/or Gas Network</h1>
+            <article>
+                <h2>Subscription to a New Service</h2>
+                <p>
+                    To connect your residence to the STEG electricity and/or gas network and benefit from electricity and gas services, please visit your district office with the following necessary documents:
+                </p>
+
+                <div class="columns">
+                    <!-- Column for Owner -->
+                    <div class="column">
+                        <h3>For Owners:</h3>
+                        <ul>
+                            <li>A copy of the National Identity Card.</li>
+                            <li>Original property certificate issued recently by the Property Conservation Office (3 months),
+                                <br><strong>Or</strong> a certified copy of the Sales Contract,
+                                <br><strong>Or</strong> an Occupancy Certificate issued by the competent authorities.
+                            </li>
+                            <li>Building Permit, <strong>Otherwise</strong> Municipal or Regional Electrification Authorization.</li>
+                            <li>Plan extract attached to the building permit.</li>
+                            <li>A copy of the business license and commercial registry for any commercial use.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column for Tenant -->
+                    <div class="column">
+                        <h3>For Tenants: Premises already connected to electricity</h3>
+                        <ul>
+                            <li>A copy of the National Identity Card.</li>
+                            <li>A certified copy of the Rental Agreement registered with the tax office.</li>
+                            <li>Legalized authorization from the owner (to prevent claims in case of disputes, fraud, or litigation).</li>
+                            <li>A copy of the business license and commercial registry for commercial use.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="notice">
+                    To request a new gas connection for a premises already connected to electricity, please provide a STEG consumption invoice for the premises in question.
+                </p>
+
+                <p>
+                    <strong>Our reception agent will:</strong>
+                </p>
+                <ul>
+                    <li>Advise you on the power capacity of the meter to be installed.</li>
+                    <li>Provide the dimensions of niches (electricity and gas).</li>
+                    <li>Inform you about payment procedures.</li>
+                    <li>Schedule an appointment for the study.</li>
+                </ul>
+
+                <p>
+                    The work will be executed after the payment of a connection quote and a refundable advance on consumption upon the termination of your subscription.
+                </p>
+
+                <div class="footer-link">
+                    <a href="#">View Fixed Connection Rates</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

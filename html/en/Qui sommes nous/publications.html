@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: About Us :: Publications</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> History </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activities </a>
+                <a href="./stegenchiffres.html"> STEG in Numbers </a>
+                <a href="./identitevisiuelle.html"> Visual Identity </a>
+                <a href="./organigramme.html"> Organization Chart </a>
+                <a href="./perspectives.html"> Development Perspectives </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <h2>Publications</h2>
+                <p>Welcome to the STEG Publications page. Here you can find our annual reports and financial statements.</p>
+                
+                <section>
+                    <h3>Annual Reports</h3>
+                    <ul>
+                        <li><a href="#">Report 2023</a></li>
+                        <li><a href="#">Report 2022</a></li>
+                        <li><a href="#">Report 2021</a></li>
+                        <li><a href="#">Report 2020</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>Financial Statements</h3>
+                    <ul>
+                        <li><a href="#">Financial Statement 2023</a></li>
+                        <li><a href="#">Financial Statement 2022</a></li>
+                        <li><a href="#">Financial Statement 2021</a></li>
+                        <li><a href="#">Financial Statement 2020</a></li>
+                    </ul>
+                </section>    
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

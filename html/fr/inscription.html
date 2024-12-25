@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Inscription</title>
+    <link rel="icon" href="../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/inscription.css">
+    <script src="../../js/include.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <section class="registration-container">
+            <h1>Vous Venez pour la première fois ?</h1>
+            <p>Ce formulaire vous permet de :</p>
+            <ul>
+                <li>Consulter et payer vos factures en ligne.</li>
+                <li>Gérer votre abonnement STEG.</li>
+                <li>Formuler des demandes de service à la STEG.</li>
+            </ul>
+            <p><strong>Remplissez soigneusement le formulaire ci-dessous :</strong></p>
+            <p class="mandatory">(*) Champs obligatoires</p>
+
+            <form onsubmit="return validateForm(this)">
+                <label for="fullname">Nom & Prénom <span class="mandatory">*</span></label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="address">Adresse <span class="mandatory">*</span></label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Téléphone <span class="mandatory">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">E-mail <span class="mandatory">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">Utilisateur <span class="mandatory">*</span></label>
+                <input type="text" id="username" name="username" minlength="5" required>
+
+                <label for="password">Mot de passe <span class="mandatory">*</span></label>
+                <input type="password" id="password" name="password" minlength="5" required>
+
+                <label for="confirm-password">Confirmer mot de passe <span class="mandatory">*</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="security-question">Question <span class="mandatory">*</span></label>
+                <select id="security-question" name="security-question" required>
+                    <option value="">--Choisissez une question--</option>
+                    <option value="pet">Quel est le nom de votre premier animal de compagnie ?</option>
+                    <option value="city">Dans quelle ville êtes-vous né(e) ?</option>
+                </select>
+
+                <label for="security-answer">Réponse <span class="mandatory">*</span></label>
+                <input type="text" id="security-answer" name="security-answer" required>
+
+                <input type="submit" value="S'inscrire">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>

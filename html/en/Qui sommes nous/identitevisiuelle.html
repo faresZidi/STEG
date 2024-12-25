@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: About Us :: Visual Identity</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> History </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activities </a>
+                <a href="./stegenchiffres.html"> STEG in Numbers </a>
+                <a href="./identitevisiuelle.html"> Visual Identity </a>
+                <a href="./organigramme.html"> Organization Chart </a>
+                <a href="./perspectives.html"> Development Perspectives </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>A Visual Identity Reflecting Our Ambitions</h1>
+            <article>
+                <p>An identity that addresses multiple challenges:</p>
+                <ul>
+                    <li>Meeting the expectations and needs of all our clients with quality, reliability, and safety.</li>
+                    <li>Focusing on proximity, direct contact, and continuous listening to our clientele.</li>
+                    <li>Mobilizing all our resources to face the challenge of competitiveness.</li>
+                </ul>
+                <h2>Openness and Dynamism</h2>
+                <p>A free and open form illustrating the unity and dynamism driving our company, representing progress and the future.</p>
+                <h2>Shapes and Colors</h2>
+                <p><b>Our Symbols and Forms:</b></p>
+                <ul>
+                    <li><b>The Flame:</b> A symbol of natural gas, blue like our planet.</li>
+                    <li><b>The Spark:</b> Representing electricity, red like our national flag.</li>
+                    <li>Both are part of a dynamic and open overall movement, inspiring complementarity and interactivity.</li>
+                    <li>The third element, in blue, consists of two lines representing the company’s name. Depending on the language of the medium, it is either in Arabic or French.</li>
+                </ul>
+                <p><b>Our Colors:</b></p>
+                <ul>
+                    <li><b>Red:</b> A warm color evoking energy, strength, power, and enthusiasm, expressing the will for change and a spirit of challenge.</li>
+                    <li><b>Blue:</b> A cool and immaterial color evoking openness, safety, and transparency, expressing the determination and perseverance to produce clean energy.</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

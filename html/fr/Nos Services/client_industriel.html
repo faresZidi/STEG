@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Industriels Moyenne Tension</title>
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/client_industriel.css">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html"> Client Residentiel </a>
+                <a href="./client_industriel.html"> Client Industriels </a>
+                <a href="./demande_service.html"> Demande de Service </a>
+                </div>
+        </div>
+        <div class="main-content">
+            <h1>Industriels Moyenne Tension et Moyenne Pression</h1>
+            <article>
+                <p>
+                    L'abonnement moyenne tension est un abonnement souscrit pour une alimentation électrique à partir du réseau moyenne tension, transformée en basse tension par un poste de transformation propriété du client. Le poste de transformation est la propriété du client, il est exploité et entretenu par ses soins et à ses frais.
+                </p>
+                <p class="notice">
+                    Les conditions techniques qui sont à l’origine de la souscription d’un abonnement MT sont la puissance demandée et l’emplacement de l’usager par rapport aux réseaux existants.
+                </p>
+
+                <h3>Moyenne Tension</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Puissance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monophasés</td>
+                            <td>17 kV ± 7% dans les zones rurales isolées</td>
+                        </tr>
+                        <tr>
+                            <td>Triphasés</td>
+                            <td>30 kV ± 7%</td>
+                        </tr>
+                        <tr>
+                            <td>Triphasés</td>
+                            <td>15 kV ± 7% dans certaines villes du Sud</td>
+                        </tr>
+                        <tr>
+                            <td>Triphasés</td>
+                            <td>10 kV ± 7% dans certaines villes du Nord et du Centre</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>À qui s’adresser ?</h3>
+                <ul>
+                    <li>Envoyer ou déposer une demande écrite accompagnée d’un plan de situation à votre District.</li>
+                    <li>
+                        Le District relève les caractéristiques du réseau de distribution à l’adresse du projet ainsi que l’emplacement et l’orientation du poste à construire et adresse au client :
+                        <ul>
+                            <li>Le devis d’installation.</li>
+                            <li>La liste des entreprises agréées par le Ministère de l’Équipement, à consulter pour l’étude de ses besoins en puissance et la réalisation du poste de transformation.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Quelles sont les pièces à fournir ?</h3>
+                <ul>
+                    <li>Une demande écrite par l’entreprise.</li>
+                    <li>Une autorisation de bâtir ou un titre d’occupation du local.</li>
+                    <li>Un plan de Génie Civil (pour les postes cabines) à l’échelle 1/20e.</li>
+                    <li>Un plan d’implantation à l’échelle 1/1000e.</li>
+                    <li>Un extrait de carte à l’échelle 1/5000e ou 1/10000e.</li>
+                    <li>Un mémoire descriptif indiquant les différents matériels utilisés, leurs caractéristiques et leur agencement.</li>
+                </ul>
+
+                <h3>Démarche pour l’étude et l’approbation du dossier technique</h3>
+                <p>
+                    La STEG étudie la ligne d’alimentation, puis établit son dossier technique et le devis de raccordement. Elle envoie ou demande une lettre devis et aux autorités compétentes les dossiers techniques du poste et de la ligne de raccordement, en vue des enquêtes de servitude et d’autorisation.
+                </p>
+                <p>
+                    Le devis reste valable durant 3 mois pour un raccordement conforme au dossier technique soumis à l’approbation des autorités.
+                </p>
+
+                <h3>Quand s’effectue la réalisation des travaux</h3>
+                <p>
+                    Après approbation de la ligne par les autorités et après paiement du devis, la S.T.E.G. soumet à la signature du client un contrat de fourniture d’énergie. Le client fait réaliser le poste par l’entreprise choisie dans la liste des entreprises agréées, conformément au dossier technique.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

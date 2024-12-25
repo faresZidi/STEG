@@ -1,0 +1,62 @@
+.main-content {
+    width: 65%;
+    margin: 0 auto 0 5%;
+}
+
+.main-content h1 {
+    font-size: 1.5rem;
+    color: #0046ab;
+    text-align: center;
+}
+
+.main-content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #0046ab;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #00308f;
+}
+
+.mandatory {
+    color: red;
+}
+
+@media screen and (max-width: 768px){
+    .main-content{
+        width: 90%;
+    }
+}

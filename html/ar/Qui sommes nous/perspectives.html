@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: من نحن؟ :: آفاق التطوير</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> التاريخ </a>
+                <a href="./mission.html"> المهمة </a>
+                <a href="./activites.html"> الأنشطة </a>
+                <a href="./stegenchiffres.html"> STEG بالأرقام </a>
+                <a href="./identitevisiuelle.html"> الهوية البصرية </a>
+                <a href="./organigramme.html"> الهيكل التنظيمي </a>
+                <a href="./perspectives.html"> آفاق التطوير </a>
+                <a href="./publications.html"> المنشورات </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>STEG</h1>
+            <article>
+                <section>
+                    <p><strong>آفاق التطوير</strong></p>
+                    <p>في السنوات القادمة، ستركز جهود الشركة التونسية للكهرباء والغاز بشكل أساسي على:</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.steg.com.tn/fr/institutionnel/perspective_elec.html">
+                                على مستوى الكهرباء
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.steg.com.tn/fr/institutionnel/perspective_gaz.html">
+                                على مستوى الغاز الطبيعي
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.steg.com.tn/fr/institutionnel/perspective_qualite.html">
+                                على مستوى الجودة الشاملة
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

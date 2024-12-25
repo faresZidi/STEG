@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: من نحن؟ :: الهوية البصرية</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> التاريخ </a>
+                <a href="./mission.html"> المهمة </a>
+                <a href="./activites.html"> الأنشطة </a>
+                <a href="./stegenchiffres.html"> STEG بالأرقام </a>
+                <a href="./identitevisiuelle.html"> الهوية البصرية </a>
+                <a href="./organigramme.html"> الهيكل التنظيمي </a>
+                <a href="./perspectives.html"> آفاق التطوير </a>
+                <a href="./publications.html"> المنشورات </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>هوية بصرية تعكس طموحاتنا</h1>
+            <article>
+                <p>هوية تواكب العديد من التحديات:</p>
+                <ul>
+                    <li>تلبية توقعات واحتياجات جميع عملائنا بجودة وموثوقية وأمان.</li>
+                    <li>إعطاء الأولوية للتقارب، والتواصل المباشر، والاستماع المستمر لعملائنا.</li>
+                    <li>تسخير جميع مواردنا لمواجهة تحدي التنافسية.</li>
+                </ul>
+                <h2>الانفتاح والحيوية</h2>
+                <p>شكل حر ومفتوح يرمز إلى الاتحاد والحيوية التي تحرك شركتنا ويعبر عن التقدم والمستقبل.</p>
+                <h2>الأشكال والألوان</h2>
+                <p><b>رموزنا وأشكالنا:</b></p>
+                <ul>
+                    <li><b>الشعلة:</b> رمز الغاز الطبيعي، باللون الأزرق مثل كوكبنا.</li>
+                    <li><b>الشرارة:</b> رمز الكهرباء، باللون الأحمر مثل علمنا الوطني.</li>
+                    <li>كلاهما مدمج في حركة ديناميكية ومفتوحة تعبر عن التكامل والتفاعل.</li>
+                    <li>العنصر الثالث، باللون الأزرق، يتكون من خطين يمثلان اسم الشركة، ويتم عرضه إما بالعربية أو بالفرنسية حسب لغة الوسيط.</li>
+                </ul>
+                <p><b>ألواننا:</b></p>
+                <ul>
+                    <li><b>الأحمر:</b> لون دافئ يرمز إلى الطاقة، القوة، القوة، والحماس، معبرًا عن الإرادة للتغيير وروح التحدي.</li>
+                    <li><b>الأزرق:</b> لون بارد وغير مادي، يرمز إلى الانفتاح، والأمان، والشفافية، معبرًا عن الإرادة والمثابرة لإنتاج طاقة نظيفة.</li>
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

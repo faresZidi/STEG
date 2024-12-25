@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Qui sommes-nous ? :: Organigramme</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> Historique </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activités </a>
+                <a href="./stegenchiffres.html"> Steg en chiffres </a>
+                <a href="./identitevisiuelle.html"> Identité visuelle </a>
+                <a href="./organigramme.html"> Organigramme </a>
+                <a href="./perspectives.html"> Perspectives de développement </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Organigramme STEG</h1>
+            <article>
+                <div class="organigramme">
+                    <!-- Top Level -->
+                    <div class="level">
+                        <div class="node">Direction Générale</div>
+                    </div>
+
+                    <!-- Second Level -->
+                    <div class="level">
+                        <div class="node">Conseillers DG<br>SPCCM</div>
+                        <div class="node">DPSC<br>CAI</div>
+                    </div>
+
+                    <!-- Third Level -->
+                    <div class="level">
+                        <div class="node">Stratégie<br>et Planification</div>
+                        <div class="node">Gouvernance</div>
+                    </div>
+
+                    <!-- Fourth Level -->
+                    <div class="level">
+                        <div class="node">Équipement</div>
+                        <div class="node">Audit<br>et Inspection</div>
+                    </div>
+
+                    <!-- Fifth Level -->
+                    <div class="level">
+                        <div class="node">Affaires Générales</div>
+                        <div class="node">Ressources Humaines</div>
+                    </div>
+
+                    <!-- Sixth Level -->
+                    <div class="level">
+                        <div class="node">Informatique et<br>Télécommunications</div>
+                        <div class="node">Finances et Comptabilité</div>
+                    </div>
+
+                    <!-- Seventh Level -->
+                    <div class="level">
+                        <div class="node">Maîtrise de la Technologie</div>
+                        <div class="node">Contrôle de Gestion</div>
+                    </div>
+
+                    <!-- Additional Levels -->
+                    <div class="level">
+                        <div class="node">Production<br>Électricité</div>
+                        <div class="node">Organisation et<br>Système d'Information</div>
+                    </div>
+
+                    <div class="level">
+                        <div class="node">Réseau Transport<br>Électricité</div>
+                        <div class="node">Affaires Juridiques</div>
+                    </div>
+
+                    <div class="level">
+                        <div class="node">Production et<br>Transport Gaz</div>
+                        <div class="node">Sécurité et<br>Environnement</div>
+                    </div>
+
+                    <div class="level">
+                        <div class="node">Distribution Électricité<br>et Gaz</div>
+                        <div class="node">Gestion des Risques</div>
+                    </div>
+
+                    <div class="level">
+                        <div class="node">Coopération et Communication</div>
+                        <div class="node">Relations avec le Citoyen</div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    function showModal(id) {
+        document.getElementById(id).classList.add('active');
+    }
+
+    function closeModal(id) {
+        document.getElementById(id).classList.remove('active');
+    }
+</script>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

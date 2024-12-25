@@ -1,0 +1,64 @@
+.main-content {
+    width: 60%;
+}
+
+.header-info {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.header-info span {
+    font-weight: bold;
+}
+
+.offer-list {
+    margin: 20px 0;
+}
+
+.offer-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.offer-item:last-child {
+    border-bottom: none;
+}
+
+.offer-item span.date {
+    font-weight: bold;
+    color: #0046ab;
+}
+
+.offer-item span.text {
+    margin-left: 10px;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #0046ab;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.pagination a.active {
+    background-color: #0046ab;
+    color: #fff;
+    border: none;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+@media screen and (max-width: 768px){
+    .main-content{
+        width: 100%;
+    }
+}

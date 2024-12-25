@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: من نحن؟ :: المنشورات</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> التاريخ </a>
+                <a href="./mission.html"> المهمة </a>
+                <a href="./activites.html"> الأنشطة </a>
+                <a href="./stegenchiffres.html"> STEG بالأرقام </a>
+                <a href="./identitevisiuelle.html"> الهوية البصرية </a>
+                <a href="./organigramme.html"> الهيكل التنظيمي </a>
+                <a href="./perspectives.html"> آفاق التطوير </a>
+                <a href="./publications.html"> المنشورات </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <h2>المنشورات</h2>
+                <p>مرحبًا بكم في صفحة منشورات الشركة التونسية للكهرباء والغاز. تجدون هنا تقاريرنا السنوية والبيانات المالية.</p>
+                
+                <section>
+                    <h3>التقارير السنوية</h3>
+                    <ul>
+                        <li><a href="#">تقرير 2023</a></li>
+                        <li><a href="#">تقرير 2022</a></li>
+                        <li><a href="#">تقرير 2021</a></li>
+                        <li><a href="#">تقرير 2020</a></li>
+                    </ul>
+                </section>
+        
+                <section>
+                    <h3>البيانات المالية</h3>
+                    <ul>
+                        <li><a href="#">البيان المالي 2023</a></li>
+                        <li><a href="#">البيان المالي 2022</a></li>
+                        <li><a href="#">البيان المالي 2021</a></li>
+                        <li><a href="#">البيان المالي 2020</a></li>
+                    </ul>
+                </section>    
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

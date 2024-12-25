@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Registration</title>
+    <link rel="icon" href="../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/inscription.css">
+    <script src="../../js/include_en.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <section class="registration-container">
+            <h1>New Here?</h1>
+            <p>This form allows you to:</p>
+            <ul>
+                <li>View and pay your bills online.</li>
+                <li>Manage your STEG subscription.</li>
+                <li>Submit service requests to STEG.</li>
+            </ul>
+            <p><strong>Please fill out the form carefully:</strong></p>
+            <p class="mandatory">(*) Required fields</p>
+
+            <form onsubmit="return validateForm(this)">
+                <label for="fullname">Full Name <span class="mandatory">*</span></label>
+                <input type="text" id="fullname" name="fullname" required>
+
+                <label for="address">Address <span class="mandatory">*</span></label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Phone <span class="mandatory">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email <span class="mandatory">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">Username <span class="mandatory">*</span></label>
+                <input type="text" id="username" name="username" minlength="5" required>
+
+                <label for="password">Password <span class="mandatory">*</span></label>
+                <input type="password" id="password" name="password" minlength="5" required>
+
+                <label for="confirm-password">Confirm Password <span class="mandatory">*</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="security-question">Security Question <span class="mandatory">*</span></label>
+                <select id="security-question" name="security-question" required>
+                    <option value="">--Choose a question--</option>
+                    <option value="pet">What was the name of your first pet?</option>
+                    <option value="city">In which city were you born?</option>
+                </select>
+
+                <label for="security-answer">Answer <span class="mandatory">*</span></label>
+                <input type="text" id="security-answer" name="security-answer" required>
+
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>

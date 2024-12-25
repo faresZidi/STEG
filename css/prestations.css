@@ -1,0 +1,114 @@
+/* General styles for the Prestations page */
+/* Breadcrumbs styling */
+.breadcrumbs {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: #999;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Address block */
+address {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #0056b3;
+}
+
+address p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+address a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    ul {
+        margin-left: 20px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    address {
+        padding: 15px;
+    }
+
+    address p {
+        font-size: 14px;
+    }
+}

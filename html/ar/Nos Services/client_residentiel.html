@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز - الربط والاشتراك</title>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/client_residentiel.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html"> الحرفاء السكنيون </a>
+                <a href="./client_industriel.html"> الحرفاء الصناعيون </a>
+                <a href="./demande_service.html"> طلب الخدمة </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>الربط بشبكة الكهرباء و/أو الغاز</h1>
+            <article>
+                <h2>طلب اشتراك جديد</h2>
+                <p>
+                    لربط محل إقامتك بشبكة الكهرباء و/أو شبكة الغاز التابعة لـSTEG والاستفادة من الكهرباء والغاز، يرجى التوجه إلى منطقتك مصحوبًا بالوثائق التالية:
+                </p>
+
+                <div class="columns">
+                    <!-- Column for Propriétaire -->
+                    <div class="column">
+                        <h3>في حالة المالك:</h3>
+                        <ul>
+                            <li>نسخة من بطاقة التعريف الوطنية.</li>
+                            <li>الأصل من شهادة الملكية الصادرة حديثًا عن إدارة الملكية العقارية (3 أشهر)،
+                                <br><strong>أو</strong> نسخة مطابقة لعقد البيع،
+                                <br><strong>أو</strong> شهادة إشغال صادرة عن السلطات المختصة.
+                            </li>
+                            <li>رخصة بناء، <strong>وإلا</strong> إذن من البلدية أو الجهة المختصة للكهرباء.</li>
+                            <li>مخطط التصميم المدني المرفق برخصة البناء.</li>
+                            <li>نسخة من البطاقة المهنية والسجل التجاري لأي استخدام تجاري.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column for Locataire -->
+                    <div class="column">
+                        <h3>في حالة المستأجر: محل مزود بالكهرباء</h3>
+                        <ul>
+                            <li>نسخة من بطاقة التعريف الوطنية.</li>
+                            <li>نسخة مطابقة لعقد الإيجار مسجل لدى القباضة المالية.</li>
+                            <li>إذن موثق من المالك (لتجنب النزاعات أو الاحتيال أو القضايا).</li>
+                            <li>نسخة من البطاقة المهنية والسجل التجاري لأي استخدام تجاري.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="notice">
+                    لطلب ربط جديد بشبكة الغاز لمحل مزود بالكهرباء، يرجى تقديم فاتورة استهلاك STEG الخاصة بالمحل.
+                </p>
+
+                <p>
+                    <strong>موظف الاستقبال لدينا سوف :</strong>
+                </p>
+                <ul>
+                    <li>يقدم لك المشورة حول قدرة العداد التي سيتم تركيبها.</li>
+                    <li>يوفر أبعاد المنافذ (الكهرباء والغاز).</li>
+                    <li>يقدم معلومات عن طرق الدفع.</li>
+                    <li>يحدد موعدًا للدراسة.</li>
+                </ul>
+
+                <p>
+                    يتم تنفيذ الأعمال بعد دفع تقدير تكلفة الربط ودفعة مسبقة على الاستهلاك يتم استردادها عند إلغاء الاشتراك.
+                </p>
+
+                <div class="footer-link">
+                    <a href="#">عرض تعريفات الربط الإجمالية</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

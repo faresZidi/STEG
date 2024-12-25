@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: من نحن ؟ :: الأنشطة</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    table{
+        width: 100%;
+    }
+    tbody{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> التاريخ </a>
+                <a href="./mission.html"> المهمة </a>
+                <a href="./activites.html"> الأنشطة </a>
+                <a href="./stegenchiffres.html"> STEG بالأرقام </a>
+                <a href="./identitevisiuelle.html"> الهوية البصرية </a>
+                <a href="./organigramme.html"> الهيكل التنظيمي </a>
+                <a href="./perspectives.html"> آفاق التطوير </a>
+                <a href="./publications.html"> المنشورات </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <section>
+                    <p>تتولى الشركة التونسية للكهرباء والغاز إنتاج الطاقة الكهربائية وغاز البترول المسال (GPL)، بالإضافة إلى نقل وتوزيع الكهرباء والغاز الطبيعي على المستوى الوطني.</p>
+                    <p>الهدف الرئيسي للشركة هو تلبية احتياجات السوق الوطنية من الطاقة الكهربائية والغازية وتلبية احتياجات جميع عملائها (السكنيين، الصناعيين، والخدماتيين).</p>
+            
+                    <ul>
+                        <li>إنتاج الكهرباء من مصادر مختلفة (حرارية، مائية، رياح، ...)</li>
+                        <li>نقل الكهرباء: إدارة وتطوير الشبكات ومحطات الضغط العالي.</li>
+                        <li>توزيع الكهرباء: إدارة وتطوير شبكات ومحطات الضغط المتوسط والمنخفض.</li>
+                        <li>تطوير وتوزيع الغاز الطبيعي: إدارة البنية التحتية للغاز.</li>
+                        <li>إنتاج غاز البترول المسال (GPL).</li>
+                    </ul>
+            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>الكهرباء</th>
+                                <th>الغاز</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/produire.html">الإنتاج</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/transporter.html">النقل</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/distribuer.html">التوزيع</a>
+                                </td>
+                                <td>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/gaz.html">الغاز الطبيعي</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/produits_gpl.html">منتجات غاز البترول المسال</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

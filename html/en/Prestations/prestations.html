@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Services</title>
+    <link rel="stylesheet" href="../../../css/prestations.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./prestations.html"> Documentation Center </a>
+                <a href="./prestations.html"> Training and Development Center </a>
+                <a href="./prestations.html"> Testing and Measurement Center </a>
+                <a href="./prestations.html"> General Techniques Center </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>The Documentation Center</h1>
+
+            <article>
+                <section style="display: flex; align-items: center;">
+                    <div style="padding-right: 50px;">
+                        <p>
+                            The Scientific and Cultural Center has recently been renovated to align with STEG's policy of openness
+                            to the knowledge society and its desire to anchor and enhance cultural activity within the company.
+                        </p>
+                        <p>
+                            The doors of this modern and welcoming space are open to the company's internal public as well as to
+                            researchers, academics, and students seeking specialized information.
+                        </p>
+                    </div>
+                    <img src="../../../images/biblio010.jpg" alt="Bibliothèque">
+                </section>
+
+                <section>
+                    <h2>The Components of the Center</h2>
+                    <ul>
+                        <li>Reading Area</li>
+                        <li>Multimedia Area</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Library Services</h2>
+                    <p>
+                        Open to the public, the library offers a variety of services, giving users the opportunity to consult the
+                        documentary collection remotely via the intranet site. Titles can be reserved remotely for company users
+                        and on-site for external visitors.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Library Collection</h2>
+                    <ul>
+                        <li>Technical and scientific works</li>
+                        <li>Reference works: dictionaries and linguistic encyclopedias</li>
+                        <li>Technical and cultural journals</li>
+                        <li>Tunisian and international standards (NT / AFNOR / ISO / IEC)</li>
+                        <li>National and international newspapers</li>
+                        <li>Publications from the official printing office</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <address>
+                        <p>Documentation Center, 38 Rue Kamel Ataturk - 1080 Tunis</p>
+                        <p>Phone: +216 71 34 13 11</p>
+                        <p>Fax: +216 71 34 14 02</p>
+                        <p>Email: <a href="mailto:cd@steg.com.tn">cd@steg.com.tn</a></p>
+                    </address>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

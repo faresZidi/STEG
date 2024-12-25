@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Prestations</title>
+    <link rel="stylesheet" href="../../../css/prestations.css">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./prestations.html"> Centre de Documentation </a>
+                <a href="./prestations.html">  Centre de Formation et  de Perfectionnement </a>
+                <a href="./prestations.html">  Centre essais et  mesures </a>
+                <a href="./prestations.html">  Centre des Techniques  Générales </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Le Centre de Documentation</h1>
+
+            <article>
+                <section style="display: flex; align-items: center;">
+                    <div style="padding-right: 50px;">
+                        <p>
+                            Le Centre scientifique et culturel a été récemment aménagé pour être en harmonie avec la politique
+                            d'ouverture de la STEG sur la société du savoir et sa volonté d'ancrer et de dynamiser l'activité
+                            culturelle au sein de l'entreprise.
+                        </p>
+                        <p>
+                            Les portes de cet espace à la fois moderne et convivial sont ouvertes aussi bien au public interne
+                            de l'entreprise qu'aux chercheurs, universitaires, et étudiants à la recherche d'informations
+                            spécialisées.
+                        </p>
+                    </div>
+                    <img src="../../../images/biblio010.jpg" alt="Bibliothèque">
+                </section>
+
+                <section>
+                    <h2>Les Composantes du Centre</h2>
+                    <ul>
+                        <li>Espace lecture</li>
+                        <li>Espace médiathèque</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Les Services de la Bibliothèque</h2>
+                    <p>
+                        Ouverte au public, la bibliothèque offre de multiples services et donne à l'utilisateur l'opportunité
+                        de consulter le fonds documentaire à distance via le site Intranet. Les titres peuvent être réservés
+                        à distance pour les utilisateurs de l'entreprise et sur place pour les visiteurs externes.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Le Fonds de la Bibliothèque</h2>
+                    <ul>
+                        <li>Ouvrages techniques et scientifiques</li>
+                        <li>Ouvrages de référence : dictionnaires et encyclopédies linguistiques</li>
+                        <li>Revue techniques et culturelles</li>
+                        <li>Normes tunisiennes et internationales (NT / AFNOR / ISO / CEI)</li>
+                        <li>Journaux nationaux et internationaux</li>
+                        <li>Éditions de l'imprimerie officielle</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Contact</h2>
+                    <address>
+                        <p>Centre Documentation, 38 Rue Kamel Ataturk - 1080 Tunis</p>
+                        <p>Tél : +216 71 34 13 11</p>
+                        <p>Fax : +216 71 34 14 02</p>
+                        <p>Email : <a href="mailto:cd@steg.com.tn">cd@steg.com.tn</a></p>
+                    </address>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

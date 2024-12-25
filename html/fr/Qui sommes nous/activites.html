@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG :: Qui sommes-nous ? :: Activités</title>
+    <link rel="stylesheet" href="../../../css/historique.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    table{
+        width: 100%;
+    }
+    tbody{
+        width: 100%;
+        text-align: center;
+    }
+</style>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./historique.html"> Historique </a>
+                <a href="./mission.html"> Mission </a>
+                <a href="./activites.html"> Activités </a>
+                <a href="./stegenchiffres.html"> Steg en chiffres </a>
+                <a href="./identitevisiuelle.html"> Identité visuelle </a>
+                <a href="./organigramme.html"> Organigramme </a>
+                <a href="./perspectives.html"> Perspectives de développement </a>
+                <a href="./publications.html"> Publications </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <article>
+                <section>
+                    <p>La STEG assure la production de l'énergie électrique et du GPL, ainsi que le transport et la distribution de l'électricité et du gaz naturel au niveau national.</p>
+                    <p>Son objectif principal est de pourvoir le marché national en énergies électriques et gazières et de répondre aux besoins de l'ensemble de ses clients (résidentiels, industriels, tertiaires…).</p>
+            
+                    <ul>
+                        <li>La production de l'électricité à partir de différentes sources (thermique, hydraulique, éolienne, ...)</li>
+                        <li>Le transport de l'électricité : La gestion et le développement des réseaux et des postes Haute Tension.</li>
+                        <li>La distribution de l'électricité : la gestion et le développement des réseaux et des postes Moyenne Tension et Base Tension.</li>
+                        <li>Le développement et la distribution du gaz naturel : La gestion de l'infrastructure gazière.</li>
+                        <li>La production du GPL (Gaz de pétrole Liquéfié)</li>
+                    </ul>
+            
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Électricité</th>
+                                <th>Gaz</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/produire.html">Produire</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/transporter.html">Transporter</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/distribuer.html">Distribuer</a>
+                                </td>
+                                <td>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/gaz.html">Gaz naturel</a><br>
+                                    <a href="https://www.steg.com.tn/fr/institutionnel/produits_gpl.html">Les produits GPL</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

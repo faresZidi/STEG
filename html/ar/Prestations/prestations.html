@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشركة التونسية للكهرباء والغاز :: الخدمات</title>
+    <link rel="stylesheet" href="../../../css/prestations.css">
+    <link rel="stylesheet" href="../../../css/base_ar.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include_ar.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> القائمة</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./prestations.html"> مركز التوثيق </a>
+                <a href="./prestations.html"> مركز التدريب والتطوير </a>
+                <a href="./prestations.html"> مركز الاختبارات والقياسات </a>
+                <a href="./prestations.html"> مركز التقنيات العامة </a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>مركز التوثيق</h1>
+
+            <article>
+                <section style="display: flex; align-items: center;">
+                    <div style="padding-left: 50px;">
+                        <p>
+                            تم تجهيز المركز العلمي والثقافي حديثاً ليكون متماشياً مع سياسة انفتاح الشركة التونسية للكهرباء والغاز 
+                            على مجتمع المعرفة ورغبتها في تعزيز وتفعيل النشاط الثقافي داخل الشركة.
+                        </p>
+                        <p>
+                            أبواب هذا الفضاء الحديث والمريح مفتوحة لكل من موظفي الشركة وكذلك الباحثين والأكاديميين والطلاب الباحثين 
+                            عن معلومات متخصصة.
+                        </p>
+                    </div>
+                    <img src="../../../images/biblio010.jpg" alt="Bibliothèque">
+                </section>
+
+                <section>
+                    <h2>مكونات المركز</h2>
+                    <ul>
+                        <li>فضاء للقراءة</li>
+                        <li>فضاء الوسائط المتعددة</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>خدمات المكتبة</h2>
+                    <p>
+                        مفتوحة للجمهور، تقدم المكتبة خدمات متعددة وتتيح للمستخدم فرصة استشارة المحتوى الوثائقي عن بُعد عبر موقع 
+                        الإنترانت. يمكن حجز العناوين عن بُعد لمستخدمي الشركة، وفي الموقع للزوار الخارجيين.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>محتوى المكتبة</h2>
+                    <ul>
+                        <li>كتب تقنية وعلمية</li>
+                        <li>كتب مرجعية: قواميس وموسوعات لغوية</li>
+                        <li>مجلات تقنية وثقافية</li>
+                        <li>المواصفات التونسية والدولية (NT / AFNOR / ISO / CEI)</li>
+                        <li>صحف وطنية ودولية</li>
+                        <li>إصدارات المطبعة الرسمية</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>التواصل</h2>
+                    <address>
+                        <p>مركز التوثيق، 38 شارع كمال أتاتورك - 1080 تونس</p>
+                        <p>هاتف: +216 71 34 13 11</p>
+                        <p>فاكس: +216 71 34 14 02</p>
+                        <p>البريد الإلكتروني: <a href="mailto:cd@steg.com.tn">cd@steg.com.tn</a></p>
+                    </address>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

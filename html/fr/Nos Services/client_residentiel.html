@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Raccordement et Abonnement</title>
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/client_residentiel.css">
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html"> Client Residentiel </a>
+                <a href="./client_industriel.html"> Client Industriels </a>
+                <a href="./demande_service.html"> Demande de Service </a>
+                </div>
+        </div>
+        <div class="main-content">
+            <h1>Raccordement au réseau d’électricité et/ou du gaz</h1>
+            <article>
+                <h2>Souscription à un nouvel abonnement</h2>
+                <p>
+                    Pour raccorder votre lieu d’habitation au réseau électrique et/ou au réseau gaz de la STEG et bénéficier de l’électricité et du gaz, veuillez vous présenter à votre district muni des pièces nécessaires suivantes :
+                </p>
+
+                <div class="columns">
+                    <!-- Column for Propriétaire -->
+                    <div class="column">
+                        <h3>Cas de Propriétaire :</h3>
+                        <ul>
+                            <li>Une copie de la Carte d’Identité Nationale.</li>
+                            <li>Original du certificat de propriété délivré récemment par la Conservation de la Propriété Foncière (3 mois),
+                                <br><strong>Ou</strong> Copie conforme du Contrat de Vente,
+                                <br><strong>Ou</strong> Attestation d’occupation délivrée par les autorités compétentes.
+                            </li>
+                            <li>Autorisation de Bâtir, <strong>Sinon</strong> Autorisation municipale ou régionale d’électrification.</li>
+                            <li>Extrait du plan d’aménagement joint à l’autorisation de bâtir.</li>
+                            <li>Une copie de la patente et du registre de commerce pour tout usage commercial.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column for Locataire -->
+                    <div class="column">
+                        <h3>Cas de Locataire : Local déjà alimenté en électricité</h3>
+                        <ul>
+                            <li>Une copie de la Carte d’Identité Nationale.</li>
+                            <li>Une copie conforme du Contrat de Location enregistré à la recette de finance.</li>
+                            <li>Autorisation légalisée auprès du propriétaire (afin d’éviter les réclamations en cas de litiges, fraude ou contentieux).</li>
+                            <li>Une copie de la patente et du registre de commerce pour usage commercial.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="notice">
+                    Pour demander un nouveau raccordement gaz pour un local déjà alimenté en électricité, veuillez présenter une facture de consommation STEG du local en question.
+                </p>
+
+                <p>
+                    <strong>Notre agent d’accueil vous :</strong>
+                </p>
+                <ul>
+                    <li>Conseillera sur la puissance du compteur à installer.</li>
+                    <li>Donnera les dimensions des niches (électricité et gaz).</li>
+                    <li>Informera des modalités des paiements.</li>
+                    <li>Fixera un rendez-vous pour l’étude.</li>
+                </ul>
+
+                <p>
+                    L’exécution des travaux se fera suite au paiement d’un devis de branchement et d’une avance sur consommation remboursable à la résiliation de votre abonnement.
+                </p>
+
+                <div class="footer-link">
+                    <a href="#">Voir les Tarifs Forfaitaires de Branchement</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

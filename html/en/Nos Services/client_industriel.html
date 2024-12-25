@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Medium Voltage Industry</title>
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/client_industriel.css">
+    <script src="../../../js/include_en.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html">Residential Client</a>
+                <a href="./client_industriel.html">Industrial Clients</a>
+                <a href="./demande_service.html">Service Request</a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Medium Voltage and Medium Pressure Industries</h1>
+            <article>
+                <p>
+                    A medium voltage subscription is subscribed for electrical power supplied from the medium voltage network, transformed into low voltage by a transformation station owned by the client. The transformation station is the client's property, operated, and maintained at their own cost and responsibility.
+                </p>
+                <p class="notice">
+                    The technical conditions for subscribing to an MV subscription depend on the power demand and the user's location relative to existing networks.
+                </p>
+
+                <h3>Medium Voltage</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Power</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Single-phase</td>
+                            <td>17 kV ± 7% in isolated rural areas</td>
+                        </tr>
+                        <tr>
+                            <td>Three-phase</td>
+                            <td>30 kV ± 7%</td>
+                        </tr>
+                        <tr>
+                            <td>Three-phase</td>
+                            <td>15 kV ± 7% in some cities in the South</td>
+                        </tr>
+                        <tr>
+                            <td>Three-phase</td>
+                            <td>10 kV ± 7% in some cities in the North and Center</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Who to Contact?</h3>
+                <ul>
+                    <li>Send or submit a written request with a location plan to your District.</li>
+                    <li>
+                        The District assesses the distribution network characteristics at the project location and the location and orientation of the station to be constructed and provides the client with:
+                        <ul>
+                            <li>The installation quote.</li>
+                            <li>A list of companies approved by the Ministry of Equipment to be consulted for power needs studies and the transformation station setup.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Required Documents</h3>
+                <ul>
+                    <li>A written request from the company.</li>
+                    <li>A building permit or occupancy title for the premises.</li>
+                    <li>A civil engineering plan (for cabin stations) at a 1/20 scale.</li>
+                    <li>A placement plan at a 1/1000 scale.</li>
+                    <li>An extract map at a 1/5000 or 1/10000 scale.</li>
+                    <li>A descriptive memorandum detailing the equipment used, its specifications, and its arrangement.</li>
+                </ul>
+
+                <h3>Study and Approval Process for the Technical File</h3>
+                <p>
+                    STEG studies the power line, prepares the technical file, and drafts the connection quote. It sends or requests a quote letter and technical files for the station and connection line from the competent authorities for easement and authorization investigations.
+                </p>
+                <p>
+                    The quote remains valid for 3 months for a connection compliant with the technical file submitted for authority approval.
+                </p>
+
+                <h3>When is the Work Carried Out?</h3>
+                <p>
+                    After line approval by the authorities and payment of the quote, STEG submits an energy supply contract for the client's signature. The client contracts an approved company from the provided list to construct the station according to the technical file.
+                </p>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed');
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed');
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>

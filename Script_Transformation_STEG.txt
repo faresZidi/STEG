@@ -1,0 +1,168 @@
+Slide 1:
+Projet de Transformation Numérique de la STEG
+Modernisation de l'interface numérique et amélioration de l'expérience utilisateur (UX/UI).
+
+Slide 2:
+Table des Matières
+1. Introduction
+2. Contexte et Problématique
+3. Étude de l'Existant
+4. Spécifications des Besoins
+5. Conception Conceptuelle
+6. Implémentation et Réalisation
+7. Tests et Déploiement
+8. Perspectives et Conclusion
+
+Slide 3:
+Introduction
+La STEG, acteur majeur de l'énergie en Tunisie, entreprend la modernisation de son site web pour répondre aux standards numériques internationaux.
+
+Slide 4:
+Contexte et Problématique
+• Site non responsive.
+• Navigation complexe.
+• Performances faibles.
+• Accessibilité limitée.
+
+Slide 5:
+Objectifs
+• Améliorer l'expérience utilisateur (UX).
+• Renforcer l'accessibilité.
+• Moderniser l'image de marque.
+
+Slide 6:
+Étude de l'Existant
+Analyse des lacunes actuelles :
+• Navigation confuse.
+• Performances médiocres.
+• Absence de design unifié.
+
+Slide 7:
+Spécifications des Besoins Fonctionnels
+• Interface responsive.
+• Navigation intuitive.
+• Accessibilité universelle (WCAG 2.1).
+
+Slide 8:
+Spécifications des Besoins Non-Fonctionnels
+• Performances optimisées.
+• Compatibilité multi-navigateurs.
+• Sécurité renforcée.
+
+Slide 9:
+Conception Conceptuelle
+Utilisation d'outils modernes :
+• HTML5, CSS3, Bootstrap.
+• JavaScript pour interactivité.
+• Google Lighthouse pour performance.
+
+Slide 10:
+Architecture
+• Modularité et réutilisabilité des composants.
+• Séparation front-end/back-end.
+• Responsiveness.
+
+Slide 11:
+Design de l'Interface Utilisateur
+• Typographies et couleurs harmonisées.
+• Pages adaptées pour desktop, tablette et mobile.
+
+Slide 12:
+Navigation et Menu
+• Menus intuitifs avec liens directs.
+• Organisation hiérarchique claire.
+
+Slide 13:
+Formulaires Interactifs
+• Validation dynamique en temps réel.
+• Messages d'erreur clairs et adaptés.
+
+Slide 14:
+Optimisation des Performances
+• Compression des images.
+• Minification CSS/JS.
+• Temps de chargement réduit à 1,5 seconde.
+
+Slide 15:
+Tests Fonctionnels
+• Tests unitaires et fonctionnels réalisés sur plusieurs navigateurs.
+• Validation des formulaires et de la navigation.
+
+Slide 16:
+Tests d'Accessibilité
+• Conformité WCAG 2.1.
+• Options de contraste élevé.
+• Navigation assistée via lecteurs d'écran.
+
+Slide 17:
+Comparaison Ancien vs Nouveau Site
+• Design : Non responsive → Responsive.
+• Navigation : Complexe → Simplifiée.
+• Performances : Lentes → Optimisées.
+
+Slide 18:
+Pages Clés : Page d'Accueil
+• Accès rapide aux services : paiements, réclamations.
+• Section de mise en avant des informations essentielles.
+
+Slide 19:
+Pages Clés : Page des Services
+• Présentation des services en cartes interactives.
+• Liens directs vers les sous-sections.
+
+Slide 20:
+Pages Clés : Page Qui Sommes-Nous
+• Vue d'ensemble de la mission et des valeurs de la STEG.
+• Informations claires et graphiques illustratifs.
+
+Slide 21:
+Pages Clés : Page Écogestes
+• Conseils pratiques pour économiser l'énergie.
+• Design interactif et multilingue.
+
+Slide 22:
+Pages Clés : Page Connexion
+• Accès sécurisé à l'espace client.
+• Formulaire de connexion simple et clair.
+
+Slide 23:
+Pages Clés : Page Inscription
+• Création de compte optimisée.
+• Interface intuitive et multilingue.
+
+Slide 24:
+Déploiement
+• Préparations réalisées dans un environnement sécurisé.
+• Documentation technique complète fournie.
+
+Slide 25:
+Résultats Obtenus
+• Accessibilité améliorée.
+• Performances optimisées.
+• Navigation intuitive.
+
+Slide 26:
+Perspectives Futures
+• Intégration d'IA pour personnalisation.
+• Évolutivité pour nouvelles fonctionnalités.
+
+Slide 27:
+Conclusion
+• Réalisation des objectifs principaux.
+• Site aligné sur les standards modernes.
+• Base solide pour les développements futurs.
+
+Slide 28:
+Annexes : Visuels Avant/Après
+Exemples comparatifs des pages avant et après transformation.
+
+Slide 29:
+Annexes : Outils Utilisés
+• Google Lighthouse.
+• Bootstrap.
+• BrowserStack.
+• Visual Studio Code.
+
+Slide 30:
+Questions et Réponses
+Merci pour votre attention ! Nous sommes disponibles pour vos questions.

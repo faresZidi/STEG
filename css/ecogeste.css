@@ -1,0 +1,67 @@
+.main-content {
+    width: 70%;
+}
+
+.eco-geste-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0046ab;
+}
+
+.eco-geste-description {
+    margin: 15px auto;
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.eco-geste-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.eco-geste-item {
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.eco-geste-item img {
+    max-width: 100px;
+    height: auto;
+}
+
+.eco-geste-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-content {
+        width: 100%;
+    }
+
+    .eco-geste-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        grid-template-columns: none;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .eco-geste-grid .eco-geste-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

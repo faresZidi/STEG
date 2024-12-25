@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEG - Demande de Service</title>
+    <link rel="icon" href="../../../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/Nos Services/demande_service.css">
+    <script src="../../../js/include.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Main Content -->
+    <main class="client-main-content">
+        <div class="navigation">
+            <div class="menu-bar">
+                <button id="toggle-menu"><i class="fa-solid fa-bars"></i> Menu</button>
+            </div>
+            <div class="elements hidden">
+                <a href="./client_residentiel.html"> Client Residentiel </a>
+                <a href="./client_industriel.html"> Client Industriels </a>
+                <a href="./demande_service.html"> Demande de Service </a>
+                </div>
+        </div>
+        <div class="main-content">
+            <h1>Demande de Service</h1>
+            <article>
+                <p>
+                    La STEG vous offre la possibilité d’exprimer votre demande de service en ligne en remplissant le formulaire suivant. La réponse de la STEG sera envoyée via votre e-mail.
+                </p>
+                <form>
+                    <!-- Abonné/Non Abonné Selection -->
+                    <div class="form-group">
+                        <label>Abonné</label>
+                        <label><input type="radio" name="abonnement" value="abonne" required> Abonné</label>
+                        <label><input type="radio" name="abonnement" value="non-abonne"> Non abonné</label>
+                    </div>
+
+                    <!-- Client Type Selection -->
+                    <div class="form-group">
+                        <label>Type de client</label>
+                        <label><input type="radio" name="client-type" value="residential" required> Clients résidentiels</label>
+                        <label><input type="radio" name="client-type" value="industrial"> Clients industriels, Promoteurs et Tertiaires</label>
+                    </div>
+
+                    <!-- Référence Input -->
+                    <div class="form-group">
+                        <label for="reference">Référence <span class="mandatory">(Si abonné)</span></label>
+                        <input type="text" id="reference" name="reference" placeholder="Saisissez votre référence">
+                    </div>
+
+                    <!-- District Dropdown -->
+                    <div class="form-group">
+                        <label for="district">District <span class="mandatory">*</span></label>
+                        <select id="district" name="district" required>
+                            <option value="">-- Sélectionnez votre district --</option>
+                            <option value="tunis">Tunis Ville</option>
+                            <option value="sousse">Sousse</option>
+                            <option value="sfax">Sfax</option>
+                            <option value="bizerte">Bizerte</option>
+                            <option value="gabes">Gabès</option>
+                            <!-- Add more districts as needed -->
+                        </select>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit">Valider</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    // Toggle menu logic
+    document.getElementById('toggle-menu').addEventListener('click', function () {
+        const elements = document.querySelector('.elements');
+        const mainContent = document.querySelector('.main-content');
+
+        if (elements.classList.contains('hidden')) {
+            elements.classList.remove('hidden');
+            elements.classList.add('displayed')
+            mainContent.classList.remove('full-width');
+        } else {
+            elements.classList.add('hidden');
+            elements.classList.remove('displayed')
+            mainContent.classList.add('full-width');
+        }
+    });
+</script>
+</html>
